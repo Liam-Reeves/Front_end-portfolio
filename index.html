@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/fd48f3693c.js" crossorigin="anonymous"></script>
+<body>
+
+    <!-- navigation starts here -->
+<nav id="desktop-nav">
+    <div class="logo">Liam Reeves</div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+ 
+      </div>
+</nav>
+<nav id="hamburger-nav">
+    <div class="logo">Liam Reeves</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        </div>
+        <div class="menu-links">
+    
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </div>
+    </div>
+
+</nav>
+<!-- navigation ends here -->
+
+
+
+<!-- hero section starts here -->
+    <section id="profile">
+            <div class="section_pic_container">
+            <img src="assets/images/mario.jpeg" alt="Liam Reeves profile picture">
+        </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello I'm</p>
+
+        <p class="title">Liam Reeves</p>
+        <p class="section__text__p2">Front end web developer</p>
+
+        <div class="btn-container">
+
+            <button class="btn-btn-color-2"onclick="window.open('assets/Liam CV.pdf')">Download CV</button>
+            <button class="btn-btn-color-1"onclick="location.href ='./#contact' ">Contact Info</button>
+
+        </div>
+
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="my linked in profile"class="icon" onclick="location.href ='https://linkedin.com/Liam Wesley' ">
+            <img src="./assets/images/github.png" alt="my github profile" class="icon"onclick="location.href ='https://github.com/Liam-Reeves' ">
+
+        </div>
+
+        
+
+    </div>
+</section>
+<!-- 
+hero section ends here -->
+
+
+<!-- About section starts here -->
+<section id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="./assets/images/liam logo.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="portfolio-description">
+                   I am proud to describe myself as an innovative and passionate developer, driven by a deep enthusiasm for coding and technology. 
+                   With a knack for adaptability, I quickly learn new technologies and thrive in ever-changing project landscapes. 
+                   Collaboration is at the heart of my work, as I value effective communication and teamwork to deliver exceptional results. 
+                   Detail-oriented and resourceful, I meticulously craft solutions while leveraging available resources.
+                    Proactive and analytical, I anticipate challenges and apply logical reasoning to overcome them, always with a focus on achieving tangible outcomes.
+                     As a self-motivated continuous learner, I stay updated with industry trends and strive for personal and professional growth. 
+                     Customer-focused and efficient, I prioritize user satisfaction while maximizing productivity.
+                      With a sense of responsibility and resilience, I take ownership of tasks and projects, ensuring timely delivery and quality even in the face of adversity.</p>
+
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End</span><br>Design Web app interfaces</li>
+                            <li><span>Back End</span><br>Enhance Web app functionality</li>
+                        </ul>
+                      </div>
+                      <!-- <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>January 2024- May 2024</span><br>Android and Web Development <br>Emobilis Mobile Technology Training Institute</li>
+                         
+                        </ul>
+                      </div>
+
+                      <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2024-2028</span><br>Bsc.Comp Science <br>Cooperative University-Karen</li>
+                            <li><span>2020-2023</span><br>High School Certificate <br>Baricho High School</li> -->
+                        <!-- </ul> -->
+                      <!-- </div>  -->
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- About section ends here -->
+
+<!-- services section starts here -->
+<div id="services">
+    <div class="container">
+      <h1 class="service-name">Services</h1>
+      <div class="list-of-services">
+        <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Designing</h2>
+            <p>Capable offer make great web designs</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-paintbrush"></i>
+            <h2>App Designing</h2>
+            <p>Capale of creating cool UI for your desired mobile application</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div>
+            <i class="fa-solid fa-gear"></i> 
+            <h2>BackEnd Enhancement</h2>
+            <p>Dedicated in ensuring both your web and mobile apps run smoothly</p>
+            <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<!-- Contact section -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact</h1>
+                <p class="email"><i class="fa-solid fa-envelope"></i>wesleyliam005@gmail.com</p>
+                <p class="number"><i class="fa-solid fa-phone"></i>+254719711317</p>
+                <div class="social-media-icons">
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button  type="submit"  class="btn-btn-color-2">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
